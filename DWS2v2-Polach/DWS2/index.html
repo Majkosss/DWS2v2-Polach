@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tématická Stránka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Úkol č. 1</h1>
+    <button id="first">Klikni</button>
+
+    <h3>Úkol č. 2</h3>
+    <button id="second">Zmena Barvy!</button>
+
+    <h2 id = "nadpis">Úkol č. 3</h2>
+    <button id="third">Zmena Textu!</button>
+
+    <h1>Úkol č. 4</h1>
+
+    <button onclick="ShowText()">Zobraz Text</button>
+
+    <div id="text"></div>
+
+    <h1>Úkol č. 5</h1>
+
+    <input type="text" id="name" placeholder="Jméno">
+    <button onclick="displayMessage()">Klikni pro získání uvítací zprávy</button>
+    <p id="welcomeMessage"></p>
+
+    <h1 id="heading">Úkol č. 7</h1> <p id="text" onmouseover="changeHeadingText()" onmouseout="resetHeadingText()">Zahni myší na mě</p>
+
+    <h1>Úkol č. 8</h1>
+    <button id="time">Aktuální čas (klikni)</button>
+    <p id="stime"></p>
+
+    <h1>Úkol č. 9</h1>
+    <button id="date">Aktuální datum (klikni)</button>
+    <p id="sdate"></p>
+
+    <h2>Úkol č. 10</h2>
+    <input type="number" id="cislo10" placeholder="Zadej číslo">
+    <button onclick="plus3()">+ 3</button>
+    <p id="vysledek10"></p>
+
+    <h2>Úkol č. 11</h2>
+    <input type="number" id="cislo111" placeholder="První číslo">
+    <input type="number" id="cislo211" placeholder="Druhé číslo">
+    <button onclick="sumHodnoty()">Sečíst</button>
+    <p id="vysledek11"></p>
+
+    <h2>Úkol č. 12</h2>
+    <div class="image-container">
+        <img src="images/obrazek.png" alt="Obrázek" class="image" id="zvetsitObrazek">
+      </div>
+
+    <h2>BONUS</h2>
+    <div class="car-container">
+        <img src="images/e39.jpeg" alt="BMW E39">
+        <div class="overlay">
+            <h3>BMW E39</h3>
+            <p1>Model 5 generace vyráběný mezi lety 1995 a 2004</p1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

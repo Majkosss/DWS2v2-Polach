@@ -1,0 +1,67 @@
+button {
+    background-color: #ee3fee;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #9117d8; 
+}
+
+h1, h2 {
+    color: #111063;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p, div {
+    font-size: 18px;
+    color: #363535;
+    margin-top: 10px;
+}
+
+.image-container {
+    width: 400px;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .car-container {
+    position: relative;
+    display: inline-block;
+}
+
+.car-container img {
+    width: 50%;
+    transition: filter 0.2s ease;
+}
+
+.car-container:hover img {
+    filter: grayscale(100%);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.car-container:hover .overlay {
+    opacity: 1;
+}
