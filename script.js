@@ -76,3 +76,18 @@ image.addEventListener('mouseenter', () => {
 image.addEventListener('mouseleave', () => {
   image.style.width = '200px';
 });
+
+function pridatUkol() {
+    const ukolInput = document.getElementById("ukolInput");
+    const ukolText = ukolInput.value.trim();
+
+    const li = document.createElement("li");
+    li.textContent = ukolText;
+
+    li.onclick = function() {
+        li.remove();
+    };
+
+    document.getElementById("ukoly").appendChild(li);
+    ukolInput.value = "";
+}
