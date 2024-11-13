@@ -79,15 +79,19 @@ image.addEventListener('mouseleave', () => {
 
 function pridatUkol() {
     const ukolInput = document.getElementById("ukolInput");
+    const datumInput = document.getElementById("datumInput");
+    const casInput = document.getElementById("casInput");
+
     const ukolText = ukolInput.value.trim();
+    const datumText = datumInput.value;
+    const casText = casInput.value;
 
     const li = document.createElement("li");
-    li.textContent = ukolText;
+    li.textContent = `${ukolText} (Do: ${datumText} ${casText})`;
 
     li.onclick = function() {
-        li.remove();
+        li.style.textDecoration = li.style.textDecoration === 'line-through' ? 'none' : 'line-through';
     };
 
     document.getElementById("ukoly").appendChild(li);
-    ukolInput.value = "";
 }
